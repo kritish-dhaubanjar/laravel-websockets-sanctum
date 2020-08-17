@@ -136,7 +136,7 @@ PUSHER_APP_CLUSTER=mt1
 ],
 ```
 
-`config/app.php`
+`config/app.php` uncomment
 ```php
 App\Providers\BroadcastServiceProvider::class
 ```
