@@ -172,7 +172,7 @@ Broadcast::channel('App.User.{id}', function ($user, $id) {
 ```
 
 
-###Authorizing Private Broadcast Channels
+### Authorizing Private Broadcast Channels
 
 You should place the `Broadcast::routes` method call within your `routes/api.php` file:
 
