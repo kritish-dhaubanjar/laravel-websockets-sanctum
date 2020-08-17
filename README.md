@@ -76,7 +76,7 @@ Route::post('/sanctum/token', function (Request $request) {
 });
 ```
 
-#####Request
+##### Request
 ```
 POST /api/sanctum/token HTTP/1.1
 Host: 127.0.0.1:8000
@@ -88,7 +88,7 @@ Content-Type: application/json
     "password": "secret"
 }
 ```
-#####Response
+##### Response
 ```
 27|XHATyNgZAslFhmE3Z3HBXWN86zJH3vaauNTwriBaPFAcroIDDCe1SJ1ysTLoE08ZrpuUgOYp7U5vtLo2
 ```
@@ -105,7 +105,7 @@ php artisan migrate
 php artisan vendor:publish --provider="BeyondCode\LaravelWebSockets\WebSocketsServiceProvider" --tag="config"
 ```
 
-####Pusher
+#### Pusher
 ```
 composer require pusher/pusher-php-server "~3.0"
 ```
