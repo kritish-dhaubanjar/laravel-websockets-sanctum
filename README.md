@@ -178,6 +178,12 @@ You should place the `Broadcast::routes` method call within your `routes/api.php
 
 `Broadcast::routes(['middleware' => ['auth:sanctum']]);`
 
+### Running Laravel & Websocket Server
+```
+php artisan serve
+php artisan websockets:serve
+```
+
 ### UI
 ```
 npm i laravel-echo pusher-js axios
