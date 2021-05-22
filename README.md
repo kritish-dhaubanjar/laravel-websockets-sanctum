@@ -158,6 +158,11 @@ public function broadcastOn()
     {
         return new PrivateChannel('App.User.3');
     }
+    
+public function broadcastAs()
+    {
+        return 'new-message-event';
+    }
 ...
 }
 
@@ -245,7 +250,7 @@ axios
         },
       });
 
-      echo.private(`App.User.${data.id}`).listen("Chat", (message) => {
+      echo.private(`App.User.${data.id}`).listen("new-message-event", (message) => {
         console.log(message);
       });
     });
