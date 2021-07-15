@@ -250,7 +250,7 @@ axios
         },
       });
 
-      echo.private(`App.User.${data.id}`).listen("new-message-event", (message) => {
+      echo.private(`App.User.${data.id}`).listen(".new-message-event", (message) => {
         console.log(message);
       });
     });
